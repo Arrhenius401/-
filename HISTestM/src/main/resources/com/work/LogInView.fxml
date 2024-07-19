@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.work.controller.LoginController">
+   <children>
+      <Button layoutX="174.0" layoutY="324.0" onAction="#login" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" text="登录">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="93.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="101.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" wrappingWidth="32.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userName" layoutX="175.0" layoutY="228.0" />
+      <PasswordField fx:id="userPassword" layoutX="175.0" layoutY="268.0" />
+      <ImageView fitHeight="183.0" fitWidth="456.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="406.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.work.controller.DoctorViewController">
+   <children>
+      <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="信息查询">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生类别：" />
+      <RadioButton fx:id="treatDoctor" layoutX="88.0" layoutY="56.0" mnemonicParsing="false" text="接诊医生" />
+      <RadioButton fx:id="phramacyDoctor" layoutX="171.0" layoutY="56.0" mnemonicParsing="false" text="药房医生" />
+      <Text layoutX="28.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="挂号科室：" />
+      <ComboBox fx:id="deptName" layoutX="88.0" layoutY="92.0" prefHeight="23.0" prefWidth="80.0" />
+      <Text layoutX="188.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="号别：" />
+      <ComboBox fx:id="treatLevel" layoutX="224.0" layoutY="92.0" prefHeight="23.0" prefWidth="80.0" />
+      <Text layoutX="322.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生姓名：" />
+      <ComboBox fx:id="doctorName" layoutX="382.0" layoutY="92.0" prefHeight="23.0" prefWidth="80.0" />
+      <Line endX="372.0" layoutX="115.0" layoutY="134.0" startX="-100.0" />
+      <Button fx:id="searchAcountOrUID" layoutX="422.0" layoutY="153.0" mnemonicParsing="false" onAction="#searchAcountOrUID" text="查询" />
+      <Text layoutX="28.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="查询依据：" />
+      <TextField fx:id="depend" layoutX="291.0" layoutY="153.0" prefHeight="23.0" prefWidth="106.0" />
+      <Text layoutX="14.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生信息">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="177.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生姓名：" />
+      <Text layoutX="28.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生编号：" />
+      <Text layoutX="327.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生类别：" />
+      <Text layoutX="28.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="性别：" />
+      <Text layoutX="179.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="年龄：" />
+      <Text layoutX="28.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="状态：" />
+      <Text layoutX="28.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="科室：" />
+      <Text layoutX="179.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="号别：" />
+      <Button fx:id="back" layoutX="405.0" layoutY="345.0" mnemonicParsing="false" onAction="#back" text="返回">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="name" layoutX="236.0" layoutY="235.0" prefHeight="23.0" prefWidth="80.0" />
+      <TextField fx:id="sex" layoutX="88.0" layoutY="267.0" prefHeight="23.0" prefWidth="80.0" />
+      <TextField fx:id="doctorDept" layoutX="88.0" layoutY="300.0" prefHeight="23.0" prefWidth="80.0" />
+      <TextField fx:id="UID" layoutX="88.0" layoutY="235.0" prefHeight="23.0" prefWidth="80.0" />
+      <TextField fx:id="catalog" layoutX="389.0" layoutY="236.0" prefHeight="23.0" prefWidth="80.0" />
+      <TextField fx:id="isAvailable" layoutX="88.0" layoutY="336.0" prefHeight="23.0" prefWidth="80.0" />
+      <TextField fx:id="age" layoutX="236.0" layoutY="267.0" prefHeight="23.0" prefWidth="80.0" />
+      <TextField fx:id="doctorLevel" layoutX="236.0" layoutY="300.0" prefHeight="23.0" prefWidth="80.0" />
+      <RadioButton fx:id="selectUID" layoutX="88.0" layoutY="157.0" mnemonicParsing="false" text="医生编号" />
+      <RadioButton fx:id="selectAccount" layoutX="172.0" layoutY="157.0" mnemonicParsing="false" text="医生账号" />
+      <Text layoutX="328.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="费用：" />
+      <TextField fx:id="doctorFee" layoutX="389.0" layoutY="300.0" prefHeight="23.0" prefWidth="80.0" />
+      <Text layoutX="327.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="取药窗口：" />
+      <TextField fx:id="window" layoutX="389.0" layoutY="267.0" prefHeight="23.0" prefWidth="80.0" />
+   </children>
+</AnchorPane>

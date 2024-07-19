@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="350.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.work.controller.MainController">
+    <children>
+        <ImageView fitHeight="118.0" fitWidth="171.0" layoutX="35.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../image/button1.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="118.0" fitWidth="171.0" layoutX="34.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../image/button2.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="118.0" fitWidth="171.0" layoutX="232.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../image/button3.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="118.0" fitWidth="171.0" layoutX="231.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../image/button6.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="118.0" fitWidth="171.0" layoutX="429.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../image/button5.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="118.0" fitWidth="171.0" layoutX="429.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../image/button4.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="45.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0"  text="挂号收费" wrappingWidth="105.57366943359375">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="239.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="门诊医生" wrappingWidth="105.57366943359375">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="437.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="药房管理" wrappingWidth="105.57366943359375">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="437.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="账号信息" wrappingWidth="105.57366943359375">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生信息" wrappingWidth="105.57366943359375">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="239.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="患者信息" wrappingWidth="105.57366943359375">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Button fx:id="regist" layoutX="119.0" layoutY="86.0" mnemonicParsing="false" onAction="#toRegist" text="现场挂号" />
+        <Button fx:id="diagnose" layoutX="313.0" layoutY="86.0" mnemonicParsing="false" onAction="#toDiagnose" text="医生看诊" />
+        <Button fx:id="medicineThing" layoutX="511.0" layoutY="86.0" mnemonicParsing="false" onAction="#toMedicineManage" text="药物总览" />
+        <Button fx:id="deliverMedicine" layoutX="511.0" layoutY="122.0" mnemonicParsing="false" onAction="#toMedicine" text="药房取药" />
+        <Button fx:id="doctorThing" layoutX="119.0" layoutY="241.0" mnemonicParsing="false" onAction="#toDoctor" text="医生总览" />
+        <Button fx:id="workOut" layoutX="119.0" layoutY="275.0" mnemonicParsing="false" onAction="#toWorkQuit" text="签到考勤" />
+        <Button fx:id="patientThing" layoutX="313.0" layoutY="241.0" mnemonicParsing="false" onAction="#toPatient" text="患者总览" />
+        <Button fx:id="accountThing" layoutX="511.0" layoutY="242.0" mnemonicParsing="false" onAction="#toAccount" text="账号总览" />
+        <Button fx:id="signUp" layoutX="511.0" layoutY="275.0" mnemonicParsing="false" onAction="#toSignUp" text="账号注册" />
+    </children>
+</AnchorPane>

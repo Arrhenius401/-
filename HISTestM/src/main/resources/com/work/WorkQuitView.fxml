@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.work.controller.WorkQuitViewController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="400.0" prefWidth="346.0">
+        <columns>
+          <TableColumn fx:id="start" prefWidth="171.3333740234375" text="签到时间" />
+            <TableColumn fx:id="end" prefWidth="173.6666259765625" text="签退时间" />
+        </columns>
+      </TableView>
+      <Text layoutX="366.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生编号：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="366.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生姓名：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="366.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="状态：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="UID" layoutX="436.0" layoutY="32.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="436.0" layoutY="68.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="isAvailable" layoutX="436.0" layoutY="104.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="inOut" layoutX="383.0" layoutY="297.0" mnemonicParsing="false" onAction="#pressButton" text="签到">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="454.0" layoutY="297.0" mnemonicParsing="false" onAction="#back" text="返回">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
